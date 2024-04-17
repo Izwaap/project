@@ -1,0 +1,30 @@
+/* Add CSS animations for opening site */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    background-image: url('bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    animation: fadeIn 2s; /* Apply fade-in animation to the body */
+}
+
+h1 {
+    color: white;
+    animation: fadeIn 2s; /* Apply fade-in animation to the h1 element */
+}
+
+#catImage {
+    border: 5px solid white;
+    animation: fadeIn 2s; /* Apply fade-in animation to the cat image */
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пост про кота Степана</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif; /* Montserrat font */
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        button {
+            background-color: mediumseagreen;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px; /* Changed border-radius to make border round */
+            margin-top: 10px;
+        }
+
+        #catImage {
+            width: 500px;
+            border-radius: 10px; /* Added border-radius to make border round */
+        }
+    </style>
+</head>
+<body>
+    <h1>Кіт Степан</h1>
+    <div class="image-container">
+        <img id="catImage" src="stipan.png" alt="Фото кота Степана">
+        <button onclick="changeImage()">Змінити фото кота</button>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> 
+      </script>
+    </div>
+    <p>Степан - це чудовий кіт, який завжди радує своїх господарів своєю присутністю. Він вміє багато різних речей:</p>
+    <ul>
+        <li>Вміння грати з м'ячем 🏀</li>
+        <li>Навички полювання на мишей 🐭</li>
+        <li>Любов до гладіння і ласки 💖</li>
+        <li>Вміння вигадувати різні фокуси 🎩</li>
+    </ul>
+
+    <a href="https://uk.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D0%BF%D0%B0%D0%BD_(%D0%BA%D1%96%D1%82)">Степан у Wikipedia</a>
+
+    <script>
+        function changeImage() {
+            var catImage = document.getElementById("catImage");
+            if (catImage.src.match("stepan.png")) {
+                catImage.src = "new_stepan.jpg";
+            } else {
+                catImage.src = "stepan.png";
+            }
+        }
+    </script>
+</body>
+</html>
